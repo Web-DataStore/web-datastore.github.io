@@ -1,7 +1,10 @@
 {
-    "assets" : {
+    "assets-resurgence" : {
         "Logo" : "https://web-datastore.github.io/Resurgence/Logo.svg",
-        "UnderConstructionIcon" : "https://web-datastore.github.io/Resurgence/UnderConstructionIcon.svg",
+        "Under-Construction-Icon" : "https://web-datastore.github.io/Resurgence/UnderConstructionIcon.svg",
         "Preview" : "https://web-datastore.github.io/Resurgence/Preview.jpg"
+    }
+    "assets-lua-libraries" : {
+        "Dela-Data" : "https://web-datastore.github.io/lua/dela-data.lua"
     }
 }
