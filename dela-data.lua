@@ -58,12 +58,17 @@ function DELA:parseDela(value)
     end
     return removeLastCharacter(dela)
 end
+
 function DELA:toString(value)
-    local returnValue = ""
-    for number in string.gmatch(value, "%d+") do
-        returnValue = returnValue ..alphabet[tonumber(number)]
+    if (string.find(value, "dela:\\/")) then
+        local returnValue = ""
+        for number in string.gmatch(value, "%d+") do
+            returnValue = returnValue ..alphabet[tonumber(number)]
+        end
+        return returnValue
+    else
+        return "ERROR: STRING IS NOT A VALID DELA STRING. PLEASE ADD \"dela:\\/\" TO THE BEGINNING FOR THIS TO BE A VALID DELA STRING."
     end
-    return returnValue
 end
 
 return DELA
